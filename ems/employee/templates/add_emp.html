@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADD NEW EMPLOYEE</title>
+</head>
+<body>
+    <!-- create a form with label and input and end of add submit button with some stylish inner css -->
+    <form action="/add_emp" method="post">
+        {% csrf_token %}
+        <label for="id">ID</label>
+        <input type="number" name="eid" id="eid" value="{{eid}}">
+        <br>
+        <label for="name">Name</label>
+        <input type="text" name="ename" id="ename"  value="{{ename}}">
+        <br>
+        <label for="email">Email</label>
+        <input type="email" name="eemail" id="eemail"  value="{{eemail}}">
+        <br>
+        <label for="phone">Address</label>
+        <input type="text" name="econtact" id="econtact" value="{{econtact}}">
+        <br>
+        <label for="address">Salary</label>
+        <input type="text" name="salary" id="address"  value="{{salary}}">
+        <br>
+        <label for="salary">Salary</label>
+        <input type="number" name="phone" id="phone"  value="{{phone}}">
+        <br>
+        <label for="department">Hiring Date</label>
+        <input type="date" name="hire_date" id="department"  value="{{hire_date}}">
+        <br>
+    
+    
+        <input type="submit" value="ADD EMPLOYEE">
+    </form>
+    <a class="btn btn-primary" href="http://127.0.0.1:8000/" role="button">Back Home</a>
+    
+</body>
+</html>

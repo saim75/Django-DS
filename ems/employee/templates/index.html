@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Employee Management System</title>
+</head>
+<body>
+    {% load static %}
+
+    <div class="container">
+        <h1>Hello World</h1>
+        <hr>
+        <a class="btn btn-primary" href="/all_emp" role="button">Employee List</a>
+        <a class="btn btn-primary" href="/add_emp" role="button">Add Employee</a>
+        <a class="btn btn-primary" href="/remove_emp" role="button">Remove Employee</a>
+        <a class="btn btn-primary" href="/filter_emp" role="button">Filter Employee</a><br><br>
+        
+    </div>
+
+
+
+    <script src = "{% static 'js/all.js' %}"></script>
+    <script src = "{% static 'js/bootstrap.js' %}"></script>
+</body>
+</html>
