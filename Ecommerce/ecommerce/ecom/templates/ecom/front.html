@@ -1,0 +1,26 @@
+{% extends 'ecom/base.html' %}
+{% load static %}
+{% block content %}
+
+<header class="px-6 py-10 lg:py-20 bg-purple-500">
+    <div class = " max-w-3xl mx-auto text-center"> 
+      <p class= "mb-2 text-3xl lg:text-3xl text-white">Welcome to Online shopping</p>
+      <p class= "mb-5 text-white">Lorem ipsum doller sit amet</p>
+      <a href="#" class= " inline-block px-8 py-4 rounded-xl bg-white text-purple-500 hover:bg-gray-200">Start shopping</a>
+    </div>
+  </header>
+
+
+<div class = " max-w-6xl mx-auto py-2 px-6 xl:px-0">
+    <div class= " products flex items center flex-wrap">
+        <div class="w-full md:w-1/3 xl:-1/4 p-6">
+            <div class = "pt-3 flex items-center justify-between">
+                <a href="#">Product Name</a>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

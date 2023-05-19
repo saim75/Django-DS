@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+{%load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="{% static 'ecom/css/base.css'%}">
+    <title>Ecommerce Website</title>
+</head>
+<body>
+    <nav class="bg-gray-400">
+        <div class="mx-auto px-4 py-2 max-w-7xl flex justify-between items-center">
+          <div class="flex items-center">
+            <a href="#" class="text-white text-xl font-bold flex items-center">
+              <i class="fas fa-shopping-cart mr-2"></i>
+              My Ecommerce Site
+            </a>
+          </div>
+          <div class="hidden md:block">
+            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md font-medium">Home</a>
+            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md font-medium">Shop</a>
+            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md font-medium">About</a>
+            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md font-medium">Contact</a>
+            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md font-medium">Sign in</a>
+            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md font-medium">Sign up</a>
+          </div>
+            <div class="md:hidden flex items-center">
+                <button class="outline-none mobile-menu-button">
+                <i class="fas fa-bars text-white"></i>
+                </button>
+            </div>
+            <div>
+                <button>
+                    <a href="#" class="text-white text-xl font-bold flex items-center">
+                        <i class=class='fas fa-cart'></i>
+
+                      </a>
+                </button>
+            </div>
+            <div>
+                <button>
+                    <a href="#" class="text-white text-xl font-bold flex items-center">
+                        <i class=class='fas fa-user'></i>
+    
+                    </a>
+                </button>
+            </div>
+                  
+      </nav>
+
+
+      <main>
+        <header class="px-6 py-10 lg:py-20 bg-purple-500">
+          <div class = " max-w-3xl mx-auto text-center"> 
+            <p class= "mb-2 text-3xl lg:text-3xl text-white">Welcome to Online shopping</p>
+            <p class= "mb-5 text-white">Lorem ipsum doller sit amet</p>
+            <a href="#" class= " inline-block px-8 py-4 rounded-xl bg-white text-purple-500 hover:bg-gray-200">Start shopping</a>
+          </div>
+        </header>
+      </main>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--  Create a footer in left side it will show about us and in right side it will show contact with us with different type of social media icon and must have to be responsive -->
+    <footer>
+        <div class="flex justify-between bg-gray-200 p-4">
+            <div class="flex flex-col">
+                <h1 class="text-2xl font-bold">About Us</h1>
+                <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+            </div>
+            <div class="flex flex-col">
+                <h1 class="text-2xl font-bold">Contact Us</h1>
+                <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+            </div>
+                <div class="flex flex-col items-center">
+                    <h1 class="text-2xl font-bold mb-4">Follow Us</h1>
+                    <div class="flex justify-between w-full max-w-md">
+                      <a href="#" class="flex items-center justify-center rounded-full bg-blue-500 w-12 h-12">
+                        <i class="fab fa-facebook-f text-white"></i>
+                      </a>
+                      <a href="#" class="flex items-center justify-center rounded-full bg-blue-500 w-12 h-12">
+                        <i class="fab fa-twitter text-white"></i>
+                      </a>
+                      <a href="https://www.linkedin.com/in/kaji-saim-565281158/" class="flex items-center justify-center rounded-full bg-blue-500 w-12 h-12">
+                        <i class="fab fa-linkedin-in text-white"></i>
+                      </a>
+                      <a href="#" class="flex items-center justify-center rounded-full bg-blue-500 w-12 h-12">
+                        <i class="fab fa-instagram text-white"></i>
+                      </a>
+                    </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

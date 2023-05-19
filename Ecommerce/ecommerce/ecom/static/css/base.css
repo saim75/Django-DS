@@ -1,0 +1,15 @@
+@media (min-width: 768px) {
+    .title {
+      font-size: 3xl;
+    }
+    .icon {
+      width: 16;
+      height: 16;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .nav-link {
+      margin-left: 3rem;
+    }
+  }
