@@ -21,4 +21,5 @@ from ecom import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('ecom.urls')),
+    path('ecom/', include('ecom.urls')),
 ]
