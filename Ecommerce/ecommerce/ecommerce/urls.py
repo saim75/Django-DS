@@ -17,9 +17,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from ecom import views
+from product import views
+from cart import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('ecom.urls')),
     path('ecom/', include('ecom.urls')),
+    path('products/', include('product.urls')),
+    path('cart/', include('cart.urls')),
 ]
