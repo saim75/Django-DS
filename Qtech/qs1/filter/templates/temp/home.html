@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Filtering</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <input type="checkbox" id="navbar-toggle">
+                <label for="navbar-toggle" class="navbar-toggle-label">
+                    <span class="menu-icon"></span>
+                </label>
+                <ul class="navbar-menu">
+                    <li><a href="{% url 'brand_page' %}">Brands</a></li>
+                    <li><a href="{% url 'category_page' %}">Categories</a></li>
+                    <li><a href="{% url 'product_page' %}">Products</a></li>
+                    <li><a href="{% url 'seller_page' %}">Sellers</a></li>
+                    <li><a href="{% url 'warranty_page' %}">Warranties</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    
+</body>
+</html>
