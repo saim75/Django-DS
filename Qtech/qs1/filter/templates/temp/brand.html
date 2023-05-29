@@ -19,7 +19,7 @@
                 <div class="brand-cards">
                     {% for brand in brands %}
                     <div class="brand-card">
-                        <img src="{% static 'images/brand/' %}{{ brand.image }}" alt="{{ brand.name }}">
+                        <img src="{% static 'images/brand/'|add:brand.image %}" alt="{{ brand.name }}">
                         <h3>{{ brand.name }}</h3>
                     </div>
                     {% endfor %}

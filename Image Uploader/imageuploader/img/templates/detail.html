@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="card text-center">
+        <img class="mx-auto d-block" style="width: 50%; height: auto;" src="{{ image.image.url }}" alt="{{ image.title }}">
+        <div class="card-body">
+            <h5 class="card-title">{{ image.title }}</h5>
+            <div class="container">
+                <p class="card-text">{{ image.description }}</p>
+            </div>
+        </div>
+    </div>
+    
+    
+</body>
+</html>

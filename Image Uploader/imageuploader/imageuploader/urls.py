@@ -16,6 +16,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from django.conf import settings
+from django.conf.urls.static import static
+from img.views import upload_image, display_images, image_detail
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-]
+    path('', upload_image, name='upload'),
+    path('images/', display_images, name='display_images'),
+    path('images/<int:image_id>/',image_detail, name='image_detail'),
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
