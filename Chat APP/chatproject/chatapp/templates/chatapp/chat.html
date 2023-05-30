@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat Room</title>
+    <link rel="stylesheet" href="{% static 'chatapp/chat.css' %}">
+    <script>
+    // Websocket code here
+    </script>
+</head>
+<body>
+    <div id="chat-room">
+        <div id="chat-log"></div>
+        <input id="chat-message-input" type="text" size="100">
+        <input id="chat-message-submit" type="button" value="Send">
+    </div>
+
+
+
+    <script src="{% static 'myapp/chat.js' %}"></script>
+</body>
+</html>

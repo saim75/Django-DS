@@ -1,0 +1,14 @@
+#chat-room {
+    width: 600px;
+    margin: 0 auto;
+}
+
+#chat-log {
+    height: 500px;
+    border: 1px solid black;
+    overflow: auto;
+}
+
+#chat-message-input, #chat-message-submit {
+    width: 100%;
+}
